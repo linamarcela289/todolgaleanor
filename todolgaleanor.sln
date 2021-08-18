@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todolgaleanor.common", "todolgaleanor.common\todolgaleanor.common.csproj", "{FDF71E0C-EB67-417C-BC30-F90CE0AF9EB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todolgaleanor.common", "todolgaleanor.common\todolgaleanor.common.csproj", "{FDF71E0C-EB67-417C-BC30-F90CE0AF9EB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todolgaleanor.Functions", "todolgaleanor.Functions\todolgaleanor.Functions.csproj", "{4552F73B-D4FC-431B-A0B8-E650DF649FDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todolgaleanor.Functions", "todolgaleanor.Functions\todolgaleanor.Functions.csproj", "{4552F73B-D4FC-431B-A0B8-E650DF649FDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todolgaleanor.Test", "todolgaleanor.Test\todolgaleanor.Test.csproj", "{7F86A09E-AD91-490F-923A-CAFF81A109B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todolgaleanor.Test", "todolgaleanor.Test\todolgaleanor.Test.csproj", "{7F86A09E-AD91-490F-923A-CAFF81A109B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
