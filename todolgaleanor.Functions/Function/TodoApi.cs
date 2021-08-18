@@ -15,10 +15,10 @@ namespace todolgaleanor.Functions.Function
         [FunctionName(nameof(CreateTodo))]
         public static async Task<IActionResult> CreateTodo(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "todo")] HttpRequest req,
-            [Table("todo" , Connection = "AzureWebJobsStorage")] CloudTable todoTable,
+            [Table("todo", Connection = "AzureWebJobsStorage")] CloudTable todoTable,
             ILogger log)
 
-        {
+         {
             log.LogInformation("C# HTTP trigger function processed a request.");
             string name = req.Query["name"];
 
