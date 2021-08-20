@@ -19,48 +19,41 @@ namespace todolgaleanor.Test.Helpers
                 ETag = "*",
                 PartitionKey = "TODO",
                 RowKey = Guid.NewGuid().ToString(),
-                CreatedTime = DateTime.UtcNow,
+                CreatedTime = DateTime.Now,
                 IsCompleted = false,
-                TaskDescription = "Task: kill the humans"
+                TaskDescription = "Taks: Kill the humans."
             };
-
         }
 
-        public static DefaultHttpRequest CreateHttpRequest(Guid todoId, TodoEntity todoRequest)
+        public static DefaultHttpRequest CreateHttpRequest(Guid todoId, Todo todoRequest)
         {
-
             string request = JsonConvert.SerializeObject(todoRequest);
             return new DefaultHttpRequest(new DefaultHttpContext())
             {
-                Body = GenerateStringFromString(request),
-                Path = $"{todoId}"
+                Body = GenerateStreamFromString(request),
+                Path = $"/{todoId}"
             };
         }
-
-        public static DefaultHttpRequest CreateHttpRequest(Guid todoId)
+        public static DefaultHttpRequest DeleteHttpRequest(Guid todoId)
         {
-
             return new DefaultHttpRequest(new DefaultHttpContext())
             {
-                Path = $"{todoId}"
+                Path = $"/{todoId}"
             };
         }
 
-        public static DefaultHttpRequest CreateHttpRequest(TodoEntity todoRequest)
+        public static DefaultHttpRequest CreateHttpRequest(Todo todoRequest)
         {
-
             string request = JsonConvert.SerializeObject(todoRequest);
             return new DefaultHttpRequest(new DefaultHttpContext())
             {
-                Body = GenerateStringFromString(request),
+                Body = GenerateStreamFromString(request)
             };
         }
 
         public static DefaultHttpRequest CreateHttpRequest()
         {
-
             return new DefaultHttpRequest(new DefaultHttpContext());
-
         }
 
         public static Todo GetTodoRequest()
@@ -72,7 +65,7 @@ namespace todolgaleanor.Test.Helpers
                 TaskDescription = "Try to conquer the world."
             };
         }
-        public static Stream GenerateStringFromString(string stringToConvert)
+        public static Stream GenerateStreamFromString(string stringToConvert)
         {
             MemoryStream stream = new MemoryStream();
             StreamWriter writer = new StreamWriter(stream);
@@ -80,16 +73,15 @@ namespace todolgaleanor.Test.Helpers
             writer.Flush();
             stream.Position = 0;
             return stream;
-
         }
 
         public static ILogger CreateLogger(LoggerTypes type = LoggerTypes.Null)
         {
             ILogger logger;
+
             if (type == LoggerTypes.List)
             {
                 logger = new ListLogger();
-
             }
             else
             {
@@ -98,5 +90,6 @@ namespace todolgaleanor.Test.Helpers
 
             return logger;
         }
+
     }
 }

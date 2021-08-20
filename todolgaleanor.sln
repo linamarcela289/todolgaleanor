@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todolgaleanor.common", "tod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todolgaleanor.Functions", "todolgaleanor.Functions\todolgaleanor.Functions.csproj", "{4552F73B-D4FC-431B-A0B8-E650DF649FDB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todolgaleanor.Test", "todolgaleanor.Test\todolgaleanor.Test.csproj", "{7F86A09E-AD91-490F-923A-CAFF81A109B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todolgaleanor.Test", "todolgaleanor.Test\todolgaleanor.Test.csproj", "{1E5C08B9-3AD6-427E-9354-1B16081D8EBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{4552F73B-D4FC-431B-A0B8-E650DF649FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4552F73B-D4FC-431B-A0B8-E650DF649FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4552F73B-D4FC-431B-A0B8-E650DF649FDB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F86A09E-AD91-490F-923A-CAFF81A109B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F86A09E-AD91-490F-923A-CAFF81A109B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F86A09E-AD91-490F-923A-CAFF81A109B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F86A09E-AD91-490F-923A-CAFF81A109B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5C08B9-3AD6-427E-9354-1B16081D8EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5C08B9-3AD6-427E-9354-1B16081D8EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5C08B9-3AD6-427E-9354-1B16081D8EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5C08B9-3AD6-427E-9354-1B16081D8EBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

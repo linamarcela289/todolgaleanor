@@ -4,9 +4,10 @@ using Microsoft.WindowsAzure.Storage.Table;
 using System;
 using System.Threading.Tasks;
 
+
 namespace todolgaleanor.Test.Helpers
 {
-    public class MockCloudTableTodos : CloudTable
+   public class MockCloudTableTodos : CloudTable
     {
         public MockCloudTableTodos(Uri tableAddress) : base(tableAddress)
         {

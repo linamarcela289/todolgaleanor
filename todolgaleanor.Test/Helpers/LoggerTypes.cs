@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace todolgaleanor.Test.Helpers
+﻿namespace todolgaleanor.Test.Helpers
 {
-  public  enum LoggerTypes
+    public enum LoggerTypes
     {
         Null,
         List
